@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Ex_1.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Ex_1.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.io.IOException</span><span class="s0">;</span>
+<span class="s0">public class </span><span class="s1">Ex_1 {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[]args) </span><span class="s0">throws </span><span class="s1">IOException {</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;olá, mundo!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s0">char </span><span class="s1">ch</span><span class="s0">;</span>
+        <span class="s1">ch = </span><span class="s2">'X'</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;ch contains &quot; </span><span class="s1">+ ch)</span><span class="s0">;</span>
+        <span class="s1">ch++</span><span class="s0">; </span><span class="s3">// incementa ch</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;ch is now &quot; </span><span class="s1">+ ch)</span><span class="s0">;</span>
+        <span class="s1">ch = </span><span class="s4">90</span><span class="s0">; </span><span class="s3">// dá a ch o valor Z</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;ch is now &quot; </span><span class="s1">+ ch)</span><span class="s0">;</span>
+        <span class="s0">byte </span><span class="s1">tipoByte = </span><span class="s4">127</span><span class="s0">;</span>
+        <span class="s0">short </span><span class="s1">tipoShort = </span><span class="s4">32767</span><span class="s0">;</span>
+        <span class="s0">char </span><span class="s1">tipoChar = </span><span class="s2">'C'</span><span class="s0">;</span>
+        <span class="s0">float </span><span class="s1">tipoFloat = </span><span class="s4">2.6f</span><span class="s0">;</span>
+        <span class="s0">double </span><span class="s1">tipoDouble = </span><span class="s4">3.59</span><span class="s0">;</span>
+        <span class="s0">int </span><span class="s1">tipoInt = </span><span class="s4">2147483647</span><span class="s0">;</span>
+        <span class="s0">long </span><span class="s1">tipoLong = </span><span class="s4">9223372036854775807L</span><span class="s0">;</span>
+        <span class="s0">boolean </span><span class="s1">tipoBooleano = </span><span class="s0">true;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Valor do tipoByte = &quot; </span><span class="s1">+ tipoByte)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Valor do tipoShort = &quot; </span><span class="s1">+ tipoShort)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Valor do tipoChar = &quot; </span><span class="s1">+ tipoChar)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Valor do tipoFloat = &quot; </span><span class="s1">+ tipoFloat)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Valor do tipoDouble = &quot; </span><span class="s1">+ tipoDouble)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Valor do tipoInt = &quot; </span><span class="s1">+ tipoInt)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Valor do tipoLong = &quot; </span><span class="s1">+ tipoLong)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Valor do tipoBooLeano = &quot; </span><span class="s1">+ tipoBooleano)</span><span class="s0">;</span>
+
+        <span class="s3">// Demonsta seguência de escape em string.</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">First</span><span class="s0">\n</span><span class="s2">Second Line&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;A</span><span class="s0">\t</span><span class="s2">B</span><span class="s0">\t</span><span class="s2">C&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;D</span><span class="s0">\t</span><span class="s2">E</span><span class="s0">\t</span><span class="s2">F</span><span class="s0">\n</span><span class="s2">&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s3">// palavras reservadas do java - laranja - vocabulario</span>
+        <span class="s3">// /t - tab \n quebra de linha \n\n salta uma linha</span>
+
+        <span class="s3">//Demonstrar valores booleanos</span>
+        <span class="s0">boolean </span><span class="s1">b</span><span class="s0">;</span>
+        <span class="s1">b = </span><span class="s0">false;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;b is &quot; </span><span class="s1">+ b)</span><span class="s0">;</span>
+        <span class="s1">b = </span><span class="s0">true;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;b is &quot; </span><span class="s1">+ b)</span><span class="s0">;</span>
+
+        <span class="s3">//um valor booleano pode controlar a instrução if</span>
+        <span class="s0">if</span><span class="s1">(b) System.out.println(</span><span class="s2">&quot;This is executed.&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">b = </span><span class="s0">false;</span>
+        <span class="s0">if</span><span class="s1">(b) System.out.println(</span><span class="s2">&quot;This is not executed.&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s3">// o resultado de um operador relacional é um valor booleano</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;10 &gt; 9 is&quot; </span><span class="s1">+ (</span><span class="s4">10 </span><span class="s1">&gt; </span><span class="s4">9</span><span class="s1">))</span><span class="s0">;</span>
+
+        <span class="s3">//Demonstra o escopo de bloco.</span>
+        <span class="s0">int </span><span class="s1">m</span><span class="s0">; </span><span class="s3">// conhecida pelo código dentro de main()</span>
+        <span class="s1">m = </span><span class="s4">10</span><span class="s0">;</span>
+        <span class="s0">if</span><span class="s1">(m == </span><span class="s4">10</span><span class="s1">) { </span><span class="s3">// inicia novo escopo</span>
+            <span class="s0">int </span><span class="s1">n = </span><span class="s4">20</span><span class="s0">; </span><span class="s3">// conhecido apenas nesse bloco</span>
+            <span class="s3">// tanto m quanto n são é conhecidos aqui.</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;m and n: &quot; </span><span class="s1">+ m + </span><span class="s2">&quot; &quot; </span><span class="s1">+ n)</span><span class="s0">;</span>
+            <span class="s1">m = n * </span><span class="s4">2</span><span class="s0">;</span>
+        <span class="s1">}</span>
+        <span class="s3">//</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
